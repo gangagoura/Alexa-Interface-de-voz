@@ -1,0 +1,87 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "primeira skill",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetPublisherIntent",
+          "slots": [
+            {
+              "name": "hero",
+              "type": "Hero"
+            }
+          ],
+          "samples": [
+            "de onde é o {hero}",
+            "de qual editora é o {hero}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "capitão américa",
+                "synonyms": [
+                  "steve rodgers",
+                  "capitao america",
+                  "capitao",
+                  "capitão"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "homem de ferro",
+                "synonyms": [
+                  "iron man",
+                  "tony",
+                  "tony stark"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "superman",
+                "synonyms": [
+                  "clark kent",
+                  "super homem",
+                  "escoteiro"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "batman",
+                "synonyms": [
+                  "morcego",
+                  "homem morcego",
+                  "bruce wayne"
+                ]
+              }
+            }
+          ],
+          "name": "Hero"
+        }
+      ]
+    }
+  },
+  "version": "4"
+}
